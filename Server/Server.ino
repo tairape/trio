@@ -3,6 +3,7 @@
 #define SSID "ESP32Server"
 #define PASSWORD "87654321"
 #define SERVER_PORT 5000
+
 #define RELAY_PIN D2 // Usando o pino D2 (GPIO4)
 
 WiFiServer server(SERVER_PORT);
@@ -28,7 +29,7 @@ void loop() {
         Serial.print("Comando recebido: ");
         Serial.println(command);
 
-        if (command == 'T') { // Toggle relé
+        if (command == 'T') { // Recebe comando para alternar o relé
           static bool relayState = false;
           relayState = !relayState;
           digitalWrite(RELAY_PIN, relayState ? HIGH : LOW);

@@ -2,8 +2,9 @@
 
 #define SSID "ESP32Server"
 #define PASSWORD "87654321"
-#define SERVER_IP "192.168.4.1"  // IP padrão do AP do ESP8266
 #define SERVER_PORT 5000
+#define SERVER_IP "192.168.4.1"  // IP padrão do AP do ESP8266
+
 #define BUTTON_PIN 8
 
 SoftwareSerial espSerial(10, 11);
