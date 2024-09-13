@@ -1,2 +1,2 @@
 # wireless-LED-controller
-Communication between ESP with external antenna and relay modules with ESP-01S.
+Communication between ESP32 with external antenna and relay modules with ESP-01S.
